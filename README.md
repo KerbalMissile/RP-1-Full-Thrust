@@ -1,16 +1,31 @@
-Mods That RP-1FT Has Configs For:
-- Luciole
-- Xingyun-2 Satellite
-- Mirror Shields
-- Near Future Mods
-- Ablative Airbrakes (BUGGED, WIP)
-- Gravity Issue
+RP-1 Full Thrust will add many new features to RP-1:
+- More Leaders, each with unique attributes and unlock times WIP
+- Hundreds of more Parts, such as Fuji, base parts and more
+- Better Visuals, better hydrolox plume, exists but is a work in progress.
+- Contracts, WIP
+- New nodes
+- New starting modes
+- Possibly more tech tree nodes
+
+Mod Compatibility:
+
 - Kerbal Reusability Expansion
-- Planetside Exploration
-- Far Future
+- Near Future Suite
+- Far Future Technology
+- Planetside Exploration Technologies
+- Mini Sample Return Capsule
 - Silly Photon Drives
+- XingYun-2 Satellite
+- MirrorShields
+- GravityIssue
+- Ablative Airbrakes
+- Waterfall
+- Luciole
 
-**Note that not all parts from these mods are configured, some mods are fully configured and some only a few parts are.**
+Dependencies:
 
-Stock Parts That RP-1FT Has Configs For:
-- KAL-1000 Controller
+- RP-1
+- Realism Overhaul
+
+P.S.
+There is an easter egg, if you can find it.
