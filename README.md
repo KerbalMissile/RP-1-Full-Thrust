@@ -23,7 +23,7 @@ Mod Compatibility:
 
 Dependencies:
 
-- RP-1
+- RP-1 (P&LC)
 - Realism Overhaul
 
 P.S.
