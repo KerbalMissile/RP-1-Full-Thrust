@@ -5,6 +5,11 @@ RP-1 Full Thrust will add many new features to RP-1:
 - Contracts & Programs, WIP (Will Be Partially Released In 2.0.0)
 - New starting modes (Released In 0.1.0)
 - Possibly more tech tree nodes
+------------------------------------------------------------------------------------------------------------------------------------
+
+Incompatibilities:
+- XingYun-2 Satellite Mod RP-1 Configs
+- MirrorShields RP-1 Configs
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
