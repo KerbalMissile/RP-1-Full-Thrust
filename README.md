@@ -40,7 +40,7 @@ Dependencies:
 
 - RP-1 (P&LC)
 - Realism Overhaul
-- Waterfall (Soft Dependency)
+- [Waterfall (Soft Dependency)](https://github.com/post-kerbin-mining-corporation/Waterfall)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
