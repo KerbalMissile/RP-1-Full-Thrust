@@ -10,26 +10,25 @@ RP-1 Full Thrust will add many new features to RP-1:
 
 Mod Compatibility:
 
-- Kerbal Reusability Expansion
-- Near Future Suite
-- Far Future Technology
-- Planetside Exploration Technologies
-- Mini Sample Return Capsule
-- Silly Photon Drives
-- XingYun-2 Satellite
-- MirrorShields
-- GravityIssue
-- Ablative Airbrakes
-- Luciole
+- [Kerbal Reusability Expansion](https://spacedock.info/mod/841/Kerbal%20Reusability%20Expansion)
+- [Near Future Suite](https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies-september-6)
+- [Far Future Technology](https://spacedock.info/mod/2603/Far%20Future%20Technologies)
+- [Planetside Exploration Technologies](https://spacedock.info/mod/2681/Planetside%20Exploration%20Technologies)
+- [Silly Photon Drives](https://spacedock.info/mod/3513/Silly%20Photon%20Drives)
+- [XingYun-2 Satellite](https://spacedock.info/mod/2559/Xingyun-2%20Satellite)
+- [MirrorShields](https://spacedock.info/mod/3761/MirrorShield)
+- [GravityIssue](https://spacedock.info/mod/3895/GravityIssue)
+- [Ablative Airbrakes](https://spacedock.info/mod/1245/Ablative-Airbrake)
+- [Luciole](https://spacedock.info/mod/2392/Luciole)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Suggested Mods (For Further Parts):
-- HabTech2
-- ProximaLaunchers
-- Starship Expansion Project
-- Salyut Stations
-- Skylab
+- [HabTech2](https://github.com/benjee10/HabTech2)
+- [ProximaLaunchers](https://github.com/Proxima-Ch2426/ProximaLaunchers)
+- [Starship Expansion Project](https://github.com/Kari1407/Starship-Expansion-Project)
+- [Salyut Stations](https://github.com/KSP-RO/SalyutStations)
+- [Skylab](https://github.com/KSP-RO/Skylab)
 
 Note:
 - These are all compatible with RP-1, SEP's RP-1 configs are included but not from the CKAN download.
