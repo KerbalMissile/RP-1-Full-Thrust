@@ -5,6 +5,17 @@ RP-1 Full Thrust will add many new features to RP-1:
 - Contracts & Programs, WIP (Will Be Partially Released In 2.0.0)
 - New starting modes (Released In 0.1.0)
 - Possibly more tech tree nodes
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+License: CC-BY-NC-SA-4.0
+
+Release Thread: https://forum.kerbalspaceprogram.com/topic/228743-rp-1-full-thrust-newly-released 
+
+Github Repo: https://github.com/KerbalMissile/RP-1-Full-Thrust
+
+Discord Link: https://discord.gg/p9EvTccemN
+  
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Incompatibilities:
