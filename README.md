@@ -24,6 +24,19 @@ Mod Compatibility:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+Suggested Mods (For Further Parts):
+- HabTech2
+- ProximaLaunchers
+- Starship Expansion Project
+- Salyut Stations
+- Skylab
+
+Note:
+- These are all compatible with RP-1, SEP's RP-1 configs are included but not from the CKAN download.
+- All of these are compatible like I said but are not listed inside of [RP-1's Suggested Mods](https://github.com/KSP-RO/RP-1/wiki/Extra-Mods-to-Consider)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 Dependencies:
 
 - RP-1 (P&LC)
