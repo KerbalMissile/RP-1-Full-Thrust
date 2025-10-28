@@ -22,6 +22,8 @@ Incompatibilities:
 - XingYun-2 Satellite Mod RP-1 Configs
 - MirrorShields RP-1 Configs
 
+(These Are The Addons To The Mods Not The Actual Mods Themselves, ex. XingYun-2 Satellite Mod is supported by RP-1Full Thrust but the addon to them released by KerbalMissile, is incomaptible as it was merged into Full Thrut, same goes for MirrorShields)
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Stock Part Compatibility:
