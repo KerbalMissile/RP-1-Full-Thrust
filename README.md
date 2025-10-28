@@ -8,6 +8,11 @@ RP-1 Full Thrust will add many new features to RP-1:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+Stock Part Compatibility:
+- KAL-1000 Controller
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 Mod Compatibility:
 
 - [Kerbal Reusability Expansion](https://spacedock.info/mod/841/Kerbal%20Reusability%20Expansion)
