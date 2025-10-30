@@ -19,7 +19,15 @@ Release Thread: https://forum.kerbalspaceprogram.com/topic/228743-rp-1-full-thru
 Github Repo: https://github.com/KerbalMissile/RP-1-Full-Thrust
 
 Discord Link: https://discord.gg/p9EvTccemN
-  
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Known Bugs:
+- Issue with Reputation and Confidence in ALL start scenarios.
+- Issue with Easter Egg Part Description
+
+If you notice these bugs, please do not report them, we are aware of them. If a bug is not listed here, check the [Issues](https://github.com/KerbalMissile/RP-1-Full-Thrust/issues) area and if it is not mentioned there, then can you report it, also if you do have discord and are in our server, please try your best to search the discord server for your bug.
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Incompatibilities:
