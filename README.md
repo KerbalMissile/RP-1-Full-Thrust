@@ -8,6 +8,10 @@ RP-1 Full Thrust will add many new features to RP-1:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+If you want more details or a clearer plan / what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 License: CC-BY-NC-SA-4.0
 
 Release Thread: https://forum.kerbalspaceprogram.com/topic/228743-rp-1-full-thrust-newly-released 
