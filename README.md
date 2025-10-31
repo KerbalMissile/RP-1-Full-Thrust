@@ -23,6 +23,7 @@ Discord Link: https://discord.gg/p9EvTccemN
 Known Bugs:
 - Issue with Reputation and Confidence in ALL start scenarios.
 - Issue with Easter Egg Part Description
+- The Ramjet does not properly shut down when switching into rocket mode (should be alleviated by manually closing the intakes) This is for the B9 Aerospace SABRE
 
 If you notice these bugs, please do not report them, we are aware of them. If a bug is not listed here, check the [Issues](https://github.com/KerbalMissile/RP-1-Full-Thrust/issues) area and if it is not mentioned there, then can you report it, also if you do have discord and are in our server, please try your best to search the discord server for your bug.
 
@@ -53,6 +54,7 @@ Mod Compatibility:
 - [GravityIssue](https://spacedock.info/mod/3895/GravityIssue)
 - [Ablative Airbrakes](https://spacedock.info/mod/1245/Ablative-Airbrake)
 - [Luciole](https://spacedock.info/mod/2392/Luciole)
+- [B9 Aerospace](https://github.com/blowfishpro/B9-Aerospace)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
