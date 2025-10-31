@@ -4,6 +4,7 @@ RP-1 Full Thrust will add many new features to RP-1:
 - Better Visuals, better hydrolox plume (Released In 0.1.0)
 - Contracts & Programs, WIP (Will Be Partially Released In 2.0.0)
 - New starting modes (Released In 0.1.0)
+- More Mod Configs (Possible Will Be Partially Released in V2.0.0)
 - Possible more tech tree nodes in the future
 
 If you want more details or a clearer plan / what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
