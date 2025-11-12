@@ -1,10 +1,10 @@
 RP-1 Full Thrust will add many new features to RP-1:
-- More Leaders, each with unique attributes and unlock times WIP (Will Be Partially Released In 2.0.0)
+- More Leaders, each with unique attributes and unlock times WIP (Will Be Partially Released In 1.0.0)
 - Hundreds of more Parts, such as Fuji, base parts and more (Partially Released In 0.1.0)
 - Better Visuals, better hydrolox plume (Released In 0.1.0)
-- Contracts & Programs, WIP (Will Be Partially Released In 2.0.0)
+- Contracts & Programs, WIP (Will Be Partially Released In 1.0.0)
 - New starting modes (Released In 0.1.0)
-- More Mod Configs (Possible Will Be Partially Released in V2.0.0)
+- More Mod Configs (Possible Will Be Partially Released in 1.0.0)
 - Possible more tech tree nodes in the future
 
 If you want more details or a clearer plan / what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
