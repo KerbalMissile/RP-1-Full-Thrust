@@ -66,6 +66,7 @@ Suggested Mods (For Further Parts):
 - [Starship Expansion Project](https://github.com/Kari1407/Starship-Expansion-Project)
 - [Salyut Stations](https://github.com/KSP-RO/SalyutStations)
 - [Skylab](https://github.com/KSP-RO/Skylab)
+- [P.L.A.N.A.](https://github.com/Proxima-Ch2426/PLANA)
 
 Note:
 - These are all compatible with RP-1, SEP's RP-1 configs are included but not from the CKAN download.
