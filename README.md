@@ -25,7 +25,7 @@ Known Bugs:
 - Issue with Reputation and Confidence in ALL start scenarios.
 - Issue with Easter Egg Part Description
 - The Ramjet does not properly shut down when switching into rocket mode (should be alleviated by manually closing the intakes) This is for the B9 Aerospace SABRE
-- TestFlight and TestLite reliability stats are all broken in-flight and set to zero. Know this won't affect if you can fly it or not it still works but its basicaly just a perfectly reliable engine.
+- TestFlight and TestLite reliability stats are all broken in-flight and set to zero. Know this won't affect if you can fly it or not it still works but its basically just a perfectly reliable engine.
 
 If you notice these bugs, please do not report them, we are aware of them. If a bug is not listed here, check the [Issues](https://github.com/KerbalMissile/RP-1-Full-Thrust/issues) area and if it is not mentioned there, then can you report it, also if you do have discord and are in our server, please try your best to search the discord server for your bug.
 
