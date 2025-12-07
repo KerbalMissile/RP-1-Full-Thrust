@@ -3,7 +3,7 @@ RP-1 Full Thrust will add many new features to RP-1:
 - Hundreds of more Parts, such as Fuji, base parts and more (Partially Released In 0.1.0)
 - Better Visuals, better hydrolox plume (Released In 0.1.0)
 - Contracts & Programs, WIP (Will Be Partially Released In 1.0.0)
-- New starting modes (Released In 0.1.0)
+- New starting scenario (Partially Released In 0.1.0)
 - More Mod Configs (Possible Will Be Partially Released in 1.0.0)
 - Possible more tech tree nodes in the future
 
