@@ -101,7 +101,7 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Waterfall is a soft dependency because RP-1 Full Thrust changes the Waterfall plumes of Hydrolox Engines to be much better, but RP-1 Full Thrut works perfectly fine without Waterfall
+Waterfall is a soft dependency because RP-1 Full Thrust changes the Waterfall plumes of Hydrolox Engines to be much better, but RP-1 Full Thrust still works perfectly fine without Waterfall.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
