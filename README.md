@@ -11,6 +11,25 @@ If you want more details or a clearer plan / what we add, look into the [wiki](h
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+**Developers and Contributors:**
+- just that guy / Elijah (Director & Lead Coder)
+- KerbalMissile (Lead Coder)
+- LlamaLlama6 (Coder)
+- Defoma (General)
+- Luci (Coder, Advanced X-Planes, SST-Dev)
+- Tyrannosaurus Studios (Modeler & Texturer)
+- Proxidesuwa (Modeler)
+- Bob² (Modeler / Playtester)
+- Casey (Playtester)
+- Vector (Contributor, Leader Code)
+- Teamkillerx1 (Cobributor, Modular Stations)
+- Papierkork (Contributor, Configs)
+
+**Note:**
+Developers are actively working on this mod, contributors have contributed pieces or sections of code and do not actively work on RP-1FT
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 License: CC-BY-NC-SA-4.0
 
 Release Thread: https://forum.kerbalspaceprogram.com/topic/228743-rp-1-full-thrust-newly-released 
@@ -21,7 +40,7 @@ Discord Link: https://discord.gg/p9EvTccemN
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Known Bugs:
+**Known Bugs:**
 - Issue with Reputation and Confidence in ALL start scenarios.
 - Issue with Easter Egg Part Description
 - The Ramjet does not properly shut down when switching into rocket mode (should be alleviated by manually closing the intakes) This is for the B9 Aerospace SABRE
@@ -31,7 +50,7 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Incompatibilities:
+**Incompatibilities:**
 - XingYun-2 Satellite Mod RP-1 Configs
 - MirrorShields RP-1 Configs
 
@@ -39,12 +58,12 @@ Incompatibilities:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Stock Part Compatibility:
+**Stock Part Compatibility:**
 - KAL-1000 Controller
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Mod Compatibility:
+**Mod Compatibility:**
 
 - [Kerbal Reusability Expansion](https://spacedock.info/mod/841/Kerbal%20Reusability%20Expansion)
 - [Near Future Suite](https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies-september-6)
@@ -60,7 +79,7 @@ Mod Compatibility:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Suggested Mods (For Further Parts):
+**Suggested Mods (For Further Parts):**
 - [HabTech2](https://github.com/benjee10/HabTech2)
 - [ProximaLaunchers](https://github.com/Proxima-Ch2426/ProximaLaunchers)
 - [Starship Expansion Project](https://github.com/Kari1407/Starship-Expansion-Project)
@@ -68,13 +87,13 @@ Suggested Mods (For Further Parts):
 - [Skylab](https://github.com/KSP-RO/Skylab)
 - [P.L.A.N.A.](https://github.com/Proxima-Ch2426/PLANA)
 
-Note:
+**Note:**
 - These are all compatible with RP-1, SEP's RP-1 configs are included but not from the CKAN download.
 - All of these are compatible like I said but are not listed inside of [RP-1's Suggested Mods](https://github.com/KSP-RO/RP-1/wiki/Extra-Mods-to-Consider)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Dependencies:
+**Dependencies:**
 
 - RP-1 (P&LC)
 - Realism Overhaul
