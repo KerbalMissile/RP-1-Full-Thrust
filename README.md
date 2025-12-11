@@ -7,7 +7,7 @@ RP-1 Full Thrust will add many new features to RP-1:
 - More Mod Configs (Possible Will Be Partially Released in 1.0.0)
 - Possible more tech tree nodes in the future
 
-If you want more details or a clearer plan / what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
+If you want more details of what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
