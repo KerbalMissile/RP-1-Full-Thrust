@@ -26,7 +26,7 @@ If you want more details of what we add, look into the [wiki](https://github.com
 - Papierkork (Contributor, Configs)
 
 **Note:**
-Developers are actively working on this mod, contributors have contributed pieces or sections of code and do not actively work on RP-1FT
+Developers are actively working on this mod, contributors have contributed pieces or sections of code and do not actively work on RP-1FT. People that are General devs, they work on multiple things for RP-1FT.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
