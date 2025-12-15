@@ -76,6 +76,7 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 - [Ablative Airbrakes](https://spacedock.info/mod/1245/Ablative-Airbrake)
 - [Luciole](https://spacedock.info/mod/2392/Luciole)
 - [B9 Aerospace](https://github.com/blowfishpro/B9-Aerospace)
+- [Benjee10 Suits](https://github.com/benjee10/Benjee10_Suits)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
