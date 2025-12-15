@@ -19,7 +19,7 @@ If you want more details of what we add, look into the [wiki](https://github.com
 - Luci (Coder, Advanced X-Planes, SST-Dev)
 - Tyrannosaurus Studios (Modeler & Texturer)
 - Proxidesuwa (Modeler)
-- Bob² (Modeler / Playtester)
+- Bob² (Design Artist)
 - Casey (Playtester)
 - Vector (Contributor, Leader Code)
 - Teamkillerx1 (Cobributor, Modular Stations)
