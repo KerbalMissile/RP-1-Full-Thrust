@@ -1,10 +1,10 @@
 RP-1 Full Thrust will add many new features to RP-1:
-- More Leaders, each with unique attributes and unlock times WIP (Will Be Partially Released In 1.0.0)
+- More Leaders, each with unique attributes and unlock times WIP (Partially Released In 1.0.0)
 - Hundreds of more Parts, such as Fuji, base parts and more (Partially Released In 0.1.0)
 - Better Visuals, better hydrolox plume (Released In 0.1.0)
-- Contracts & Programs, WIP (Will Be Partially Released In 1.0.0)
+- Contracts & Programs, WIP (Partially Released In 1.0.0)
 - New starting scenario (Partially Released In 0.1.0)
-- More Mod Configs (Possible Will Be Partially Released in 1.0.0)
+- More Mod Configs (Partially Released in 1.0.0)
 - Possible more tech tree nodes in the future
 
 If you want more details of what we add, look into the [wiki](https://github.com/KerbalMissile/RP-1-Full-Thrust/wiki)!
@@ -42,9 +42,7 @@ Discord Link: https://discord.gg/p9EvTccemN
 
 **Known Bugs:**
 - Issue with Reputation and Confidence in ALL start scenarios.
-- Issue with Easter Egg Part Description
 - The Ramjet does not properly shut down when switching into rocket mode (should be alleviated by manually closing the intakes) This is for the B9 Aerospace SABRE
-- TestFlight and TestLite reliability stats are all broken in-flight and set to zero. Know this won't affect if you can fly it or not it still works but its basically just a perfectly reliable engine.
 
 If you notice these bugs, please do not report them, we are aware of them. If a bug is not listed here, check the [Issues](https://github.com/KerbalMissile/RP-1-Full-Thrust/issues) area and if it is not mentioned there, then can you report it, also if you do have discord and are in our server, please try your best to search the discord server for your bug.
 
@@ -77,6 +75,8 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 - [Luciole](https://spacedock.info/mod/2392/Luciole)
 - [B9 Aerospace](https://github.com/blowfishpro/B9-Aerospace)
 - [Benjee10 Suits](https://github.com/benjee10/Benjee10_Suits)
+- [RealScaleBoosters](https://spacedock.info/mod/90/Real%20Scale%20Boosters)
+- [Kerbal Attachment System](https://github.com/ihsoft/KAS)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -98,10 +98,12 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 - RP-1 (P&LC)
 - Realism Overhaul
 - [Waterfall (Soft Dependency)](https://github.com/post-kerbin-mining-corporation/Waterfall)
+- [Stockalike Station Parts Expansion Redux (Soft Dependency)](https://github.com/post-kerbin-mining-corporation/StationPartsExpansionRedux)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Waterfall is a soft dependency because RP-1 Full Thrust changes the Waterfall plumes of Hydrolox Engines to be much better, but RP-1 Full Thrust still works perfectly fine without Waterfall.
+SSPXr is a soft dependency as the contract that uses it is optional.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
