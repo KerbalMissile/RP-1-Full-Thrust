@@ -1,7 +1,7 @@
 {
     "NAME": "RP-1 Full Thrust",
-    "URL": "https://raw.githubusercontent.com/KSP-RO/RP-1/master/GameData/RP-1/RP-1.version",
-    "DOWNLOAD": "https://github.com/KerbalMissile/RP-1-Full-Thrust/releases/download/V0.1.7/RP-1FT_Version_0.1.7.zip",
+    "URL": "https://raw.githubusercontent.com/KerbalMissile/RP-1-Full-Thrust/refs/heads/main/RP-1FullThrust.version",
+    "DOWNLOAD": "https://github.com/KerbalMissile/RP-1-Full-Thrust/releases/download/V1.0.0/RP-1FT_Version_1.0.0.zip",
     "HOMEPAGE": "https://github.com/KerbalMissile/RP-1-Full-Thrust",
     "VERSION": {
         "MAJOR": 1,
