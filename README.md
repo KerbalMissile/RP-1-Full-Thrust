@@ -14,7 +14,7 @@ If you want more details of what we add, look into the [wiki](https://github.com
 **Developers and Contributors:**
 - just that guy / Elijah (Director & Lead Coder)
 - KerbalMissile (Lead Coder)
-- LlamaLlama6 (Coder)
+- LlamaLlama6 (Contributor)
 - Defoma (General)
 - Luci (Coder, Advanced X-Planes, SST-Dev)
 - Tyrannosaurus Studios (Modeler & Texturer)
