@@ -1,3 +1,9 @@
+# RP-1 Full Thrust
+
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/kerbalmissile/RP-1-Full-Thrust/latest/total?style=plastic&label=Downloads%20(Latest)&color=%230088ff)
+
+---
+
 RP-1 Full Thrust will add many new features to RP-1:
 - More Leaders, each with unique attributes and unlock times WIP (Partially Released In 1.0.0)
 - Hundreds of more Parts, such as Fuji, base parts and more (Partially Released In 0.1.0)
