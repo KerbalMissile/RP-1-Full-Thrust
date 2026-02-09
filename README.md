@@ -1,6 +1,6 @@
 # RP-1 Full Thrust
 
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/kerbalmissile/RP-1-Full-Thrust/latest/total?style=plastic&label=Downloads%20(Latest)&color=%230088ff)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/KerbalMissile/RP-1-Full-Thrust/total?color=%230099ff)
 
 ---
 
