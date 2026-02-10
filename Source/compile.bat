@@ -1,133 +1,114 @@
 @echo off
-setlocal enabledelayedexpansion
+REM ===============================================
+REM  Windy - Compile Script (FINAL FIX)
+REM  Put in: GameData\Windy\Source\compile.bat
+REM  Outputs: GameData\Windy\Plugins\Windy.dll
+REM ===============================================
 
-echo ====
-echo RP-1 Full Thrust - Build Script
-echo ====
-echo.
+REM === EDIT THESE PATHS IF NEEDED ===
+set KSP_DIR=D:\SteamLibrary\steamapps\common\ModTestingKSP
+set CSC_PATH="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
 
-set SEARCH_DIR=%cd%
-echo Searching for KSP installation (looking for GameData)...
-echo Starting from: %SEARCH_DIR%
-echo KSP Path: %KSP_PATH%
-echo Managed Assemblies Path: %MANAGED_PATH%
-echo Source Path: %SRC_PATH%
-echo Output Path: %OUTPUT_PATH%
-echo.
+REM === NO NEED TO EDIT BELOW ===
 
-:SEARCH_LOOP
-if exist "%SEARCH_DIR%\GameData" (
-    set KSP_PATH=%SEARCH_DIR%
-    goto FOUND_KSP
-)
-for %%I in ("%SEARCH_DIR%\..") do set SEARCH_DIR=%%~fI
-if "%SEARCH_DIR%"=="%SystemDrive%\" goto NOT_FOUND
-goto SEARCH_LOOP
+set SRC_DIR=%~dp0
+pushd "%SRC_DIR%\.."
+set MOD_DIR=%CD%
+set OUTPUT_DIR=%MOD_DIR%\Plugins
 
-:NOT_FOUND
-echo ERROR: Could not find KSP installation (no GameData folder found)
-echo Run this script from somewhere inside your KSP folder tree, e.g. GameData\RP-1FullThrust\Source
-pause
-exit /b 1
+REM Prefer x64, fallback to 32-bit folder if needed
+set REF_DIR=%KSP_DIR%\KSP_x64_Data\Managed
+if not exist "%REF_DIR%" set REF_DIR=%KSP_DIR%\KSP_Data\Managed
 
-:FOUND_KSP
-echo Found KSP installation at: %KSP_PATH%
-echo.
-
-if not exist "%KSP_PATH%\KSP_x64_Data\Managed\Assembly-CSharp.dll" (
-    echo ERROR: This doesn't look like a valid KSP install - missing Assembly-CSharp.dll
-    pause
-    exit /b 1
+if not exist "%REF_DIR%" (
+  echo Could not find Managed folder.
+  echo Tried:
+  echo   %KSP_DIR%\KSP_x64_Data\Managed
+  echo   %KSP_DIR%\KSP_Data\Managed
+  pause
+  goto :eof
 )
 
-echo Searching for C# compiler: prefer KSP's Mono csc.exe...
-set CSC_PATH=
+if not exist "%REF_DIR%\Assembly-CSharp.dll" (
+  echo ERROR: Missing %REF_DIR%\Assembly-CSharp.dll
+  pause
+  goto :eof
+)
 
-set KSP_CSC="%KSP_PATH%\KSP_x64_Data\MonoBleedingEdge\lib\mono\4.5\csc.exe"
-if exist %KSP_PATH%\KSP_x64_Data\MonoBleedingEdge\lib\mono\4.5\csc.exe (
-    set CSC_PATH=%KSP_PATH%\KSP_x64_Data\MonoBleedingEdge\lib\mono\4.5\csc.exe
-    echo Found KSP csc at: %CSC_PATH%
+if not exist "%REF_DIR%\UnityEngine.dll" (
+  echo ERROR: Missing %REF_DIR%\UnityEngine.dll
+  pause
+  goto :eof
+)
+
+REM Build reference list - START WITH THE ESSENTIALS
+set REFS=/reference:"%REF_DIR%\Assembly-CSharp.dll"
+set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.dll"
+
+REM CRITICAL: CoreModule must come early (has MonoBehaviour, Vector3, Rect, etc.)
+if exist "%REF_DIR%\UnityEngine.CoreModule.dll" (
+  set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.CoreModule.dll"
 ) else (
-    echo KSP csc not found, falling back to .NET Framework locations...
-    for %%V in (v4.8 v4.7.2 v4.0.30319) do (
-        if exist "%SystemRoot%\Microsoft.NET\Framework64\%%V\csc.exe" (
-            set CSC_PATH=%SystemRoot%\Microsoft.NET\Framework64\%%V\csc.exe
-            goto FOUND_CSC
-        )
-        if exist "%SystemRoot%\Microsoft.NET\Framework\%%V\csc.exe" (
-            set CSC_PATH=%SystemRoot%\Microsoft.NET\Framework\%%V\csc.exe
-            goto FOUND_CSC
-        )
-    )
+  echo WARNING: UnityEngine.CoreModule.dll not found, some types may fail
 )
 
-:FOUND_CSC
-if "%CSC_PATH%"=="" (
-    echo ERROR: csc.exe not found in KSP or .NET Framework.
-    echo Please install .NET Framework developer pack or ensure KSP's MonoBleedingEdge exists.
-    pause
-    exit /b 1
+REM Add all other UnityEngine modules
+if exist "%REF_DIR%\UnityEngine.AudioModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.AudioModule.dll"
+if exist "%REF_DIR%\UnityEngine.IMGUIModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.IMGUIModule.dll"
+if exist "%REF_DIR%\UnityEngine.InputLegacyModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.InputLegacyModule.dll"
+if exist "%REF_DIR%\UnityEngine.PhysicsModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.PhysicsModule.dll"
+if exist "%REF_DIR%\UnityEngine.AnimationModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.AnimationModule.dll"
+if exist "%REF_DIR%\UnityEngine.UI.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.UI.dll"
+if exist "%REF_DIR%\UnityEngine.UIModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.UIModule.dll"
+if exist "%REF_DIR%\UnityEngine.TextRenderingModule.dll" set REFS=%REFS% /reference:"%REF_DIR%\UnityEngine.TextRenderingModule.dll"
+
+REM Optional KSP assemblies
+if exist "%REF_DIR%\Assembly-CSharp-firstpass.dll" set REFS=%REFS% /reference:"%REF_DIR%\Assembly-CSharp-firstpass.dll"
+if exist "%REF_DIR%\KSPUtil.dll" set REFS=%REFS% /reference:"%REF_DIR%\KSPUtil.dll"
+
+echo.
+echo ===============================================
+echo Building Windy.dll
+echo KSP Folder : %KSP_DIR%
+echo Source Dir : %SRC_DIR%
+echo Output Dir : %OUTPUT_DIR%
+echo Managed Dir: %REF_DIR%
+echo ===============================================
+echo.
+
+if not exist "%OUTPUT_DIR%" mkdir "%OUTPUT_DIR%"
+
+if exist "%OUTPUT_DIR%\Windy.dll" del "%OUTPUT_DIR%\Windy.dll"
+
+pushd "%SRC_DIR%"
+
+REM Make sure we actually have .cs files
+set HAS_CS=
+for %%G in (*.cs) do set HAS_CS=1
+if "%HAS_CS%"=="" (
+  echo ERROR: No .cs files found in:
+  echo   %SRC_DIR%
+  pause
+  popd
+  popd
+  goto :eof
 )
 
-echo Using C# compiler: "%CSC_PATH%"
-echo.
+REM Compile everything in Source\
+%CSC_PATH% /nologo /langversion:5 /target:library /out:"%OUTPUT_DIR%\Windy.dll" /debug- /optimize+ %REFS% *.cs
 
-set MANAGED_PATH=%KSP_PATH%\KSP_x64_Data\Managed
-set SRC_PATH=%~dp0
-set OUTPUT_PATH=%KSP_PATH%\GameData\RP-1FullThrust\Plugins
-set GAMEDATA_MODDIR=%KSP_PATH%\GameData\RP-1FullThrust
-
-echo Source folder: %SRC_PATH%
-echo Output folder (DLL): %OUTPUT_PATH%
-echo Mod GameData folder: %GAMEDATA_MODDIR%
-echo Managed assemblies at: %MANAGED_PATH%
-echo.
-
-if not exist "%OUTPUT_PATH%" (
-    echo Creating output folder at: %OUTPUT_PATH%
-    mkdir "%OUTPUT_PATH%" 2>nul
-)
-
-echo Building RP-1 Full Thrust DLL...
-echo.
-
-"%CSC_PATH%" /target:library /out:"%OUTPUT_PATH%\RP1FullThrust.dll" "%SRC_PATH%RP1FullThrustLoadingImages.cs" "%SRC_PATH%Properties\AssemblyInfo.cs" ^
-/reference:"%MANAGED_PATH%\Assembly-CSharp.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.CoreModule.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.UI.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.UIModule.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.TextRenderingModule.dll" ^
-/reference:"%MANAGED_PATH%\UnityEngine.ImageConversionModule.dll" ^
-/optimize+ /debug- /nologo
-
-if %ERRORLEVEL% NEQ 0 (
-    echo.
-    echo BUILD FAILED!
-    echo Check the compiler output above for errors.
-    pause
-    exit /b 1
-)
-
-echo.
-echo BUILD SUCCESSFUL!
-echo DLL written to:
-echo   %OUTPUT_PATH%\RP1FullThrust.dll
-echo.
-
-if not exist "%GAMEDATA_MODDIR%" mkdir "%GAMEDATA_MODDIR%" 2>nul
-echo Install to GameData now? (Y/N)
-set /p INSTALL_CHOICE=
-if /I "%INSTALL_CHOICE%"=="Y" (
-    if not exist "%GAMEDATA_MODDIR%\Plugins" mkdir "%GAMEDATA_MODDIR%\Plugins" 2>nul
-    copy /Y "%OUTPUT_PATH%\RP1FullThrust.dll" "%GAMEDATA_MODDIR%\Plugins\" >nul
-    if %ERRORLEVEL% EQU 0 (
-        echo Installed RP1FullThrust.dll to %GAMEDATA_MODDIR%\Plugins\
-    ) else (
-        echo Failed to copy DLL - please copy manually from %OUTPUT_PATH%
-    )
+if errorlevel 1 (
+  echo.
+  echo *** Build FAILED ***
+  echo Scroll up for the first error line.
+) else (
+  echo.
+  echo *** Build SUCCEEDED ***
+  echo Created:
+  echo   %OUTPUT_DIR%\Windy.dll
 )
 
 echo.
 pause
-endlocal
+popd
+popd
