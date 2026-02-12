@@ -88,7 +88,6 @@ If you notice these bugs, please do not report them, we are aware of them. If a 
 
 **Suggested Mods (For Further Parts):**
 - [HabTech2](https://github.com/benjee10/HabTech2)
-- [ProximaLaunchers](https://github.com/Proxima-Ch2426/ProximaLaunchers)
 - [Starship Expansion Project](https://github.com/Kari1407/Starship-Expansion-Project)
 - [Skylab](https://github.com/KSP-RO/Skylab)
 - [P.L.A.N.A.](https://github.com/Proxima-Ch2426/PLANA)
