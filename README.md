@@ -27,6 +27,7 @@ If you want more details of what we add, look into the [wiki](https://github.com
 - Proxidesuwa (Modeler)
 - Bob² (Design Artist)
 - Casey (Playtester)
+- Vector (Contributor, Leader Code + Fixed Scenarios)
 - Teamkillerx1 (Cobributor, Modular Stations)
 - Papierkork (Contributor, Configs)
 
