@@ -1,5 +1,7 @@
 # RP-1 Full Thrust
 
+<img width="535" height="40" alt="banner" src="https://github.com/user-attachments/assets/2ef7a2e9-b136-4a68-97f2-12717eb59646" />
+
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/KerbalMissile/RP-1-Full-Thrust/total?color=%230099ff)
 
 ---
