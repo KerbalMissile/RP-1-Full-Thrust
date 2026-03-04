@@ -50,6 +50,8 @@ Discord Link: https://discord.gg/p9EvTccemN
 **Known Bugs:**
 - Issue with Reputation and Confidence in ALL start scenarios.
 - The Ramjet does not properly shut down when switching into rocket mode (should be alleviated by manually closing the intakes) This is for the B9 Aerospace SABRE
+- U-1250 having little thrust and no waterfall plume
+- Admin effects have incorrectly labeled effects
 
 If you notice these bugs, please do not report them, we are aware of them. If a bug is not listed here, check the [Issues](https://github.com/KerbalMissile/RP-1-Full-Thrust/issues) area and if it is not mentioned there, then can you report it, also if you do have discord and are in our server, please try your best to search the discord server for your bug.
 
