@@ -1,0 +1,21 @@
+@PART[ROMeteoSustainer]:FINAL // Config By KerbalMissile, Model and Textures by Nikodga
+{
+	!MODEL:HAS[#model[*OMS-L]] {}
+	
+	MODEL 
+	{
+		model = RP-1FullThrust/Parts/U-1250/U_1250
+	}
+    %rescaleFactor = 1
+	@node_stack_top = 0.0, 0.423, 0.0, 0.0, 1.0, 0.0, 1
+	@node_stack_bottom = 0.0, -0.463, 0.0, 0.0, -1.0, 0.0, 1
+
+	MATERIAL
+	{
+		shader = TU/Metallic
+		texture = _MainTex, RP-1FullThrust/Configs/ModelChanges/U-1250/U1250_MainTex
+		texture = _BumpMap, RP-1FullThrust/Configs/ModelChanges/U-1250/U1250_BumpMap
+		texture = _Emissive, RP-1FullThrust/Configs/ModelChanges/U-1250/U1250_Emissive
+		texture = _MetallicGlossMap, RP-1FullThrust/Configs/ModelChanges/U-1250/U1250_MetallicGlossMap
+	}
+}
