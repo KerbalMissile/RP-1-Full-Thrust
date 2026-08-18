@@ -2,6 +2,14 @@
 
 ---
 
+# RP-1FT is archived and discontinued, please use the PR's underneath instead.
+## All of RP-1FT's goals or features have been made in PR's by (mostly) 2 great people:
+
+Gabo: https://github.com/WithCrow/RP-1_Crow
+Crow: https://github.com/WithCrow/RP-1_Crow
+
+---
+
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/KerbalMissile/RP-1-Full-Thrust/total?color=%230099ff)
 
 ---
